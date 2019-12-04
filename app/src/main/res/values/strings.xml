@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Learn Google API</string>
+    <string name="about">Mempunyai jaringan yang sangat luas hingga 4.800 kantor pos online. Jumlah titik layanan (Point of Sales) mencapai 58.700 titik dalam bentuk kantor pos, Agenpos, Mobile Postal Service, dan lain lain. Pos Indonesia memiliki jaringan yang dedicated, sistem distribusi yang handal, Track and Trace, layanan yang prima, kecepatan, ketepatan, serta harga yang kompetitif. Kantor pos merupakan tempat strategis untuk transaksi penjualan, dan atau distribusi barang dan jasa.
+
+Inovasi terus dilakukan oleh Pos Indonesia antara lain pembangunan Post Shop yang merupakan pengembangan bisnis ritel yang diimplementasikan untuk merubah image Kantor pos konvensional menjadi Kantor pos modern dengan pola layanan one stop shopping, yaitu Postal Services (jasa ritel) berupa layanan pengiriman surat, paket, jasa keuangan, penjualan Postal items (meterai, prangko, produk filateli dan lain lain), layanan Online Shopping</string>
+
+   <string name="help">Layanan Kurir Reguler
+
+Sarana pengiriman dokumen dan barang domestik standar dengan jaringan terluas, melayani tujuan lokal, regional dan nasional
+
+(Lead Time Maksimal H+14)
+
+-Standar Waktu Penyerahan maksimal H + 14
+
+-Area dan tujuan kiriman jaringan nasional
+
+Berat kiriman :
+
+- Surat         = s.d 2 kg
+
+- Paket         = s.d 20 kg
+
+- Surat menggunakan prangko
+
+- Paket menggunakan resi
+
+Dasar perhitungan tarif berdasarkan actual weight/volumetrik
+
+Dilengkapi dengan sistem jejak lacak utk kiriman Paket
+
+Dimensi ukuran/size :
+
+Panjang maksimal 150 cm
+Volumetrik > 90 cm
+Ganti Rugi :
+
+Terlambat 1 x ongkos kirim
+Rusak 5 atau 10 x ongkos kirim
+Hilang 10 x ongkos kirim
+Cara pelunasan tunai/kredit
+ </string>
+</resources>
