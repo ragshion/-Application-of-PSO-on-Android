@@ -1,126 +1,75 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-    <LinearLayout
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:elevation="1dp"
-        android:paddingHorizontal="20dp"
-        android:paddingVertical="15dp"
-        android:background="@android:color/white">
-
-        <HorizontalScrollView
-            android:layout_width="match_parent"
-            android:scrollbars="none"
-            android:layout_height="wrap_content">
-            <TextView
-                android:id="@+id/tvPickUpFrom"
-                android:layout_width="match_parent"
-                android:maxLines="1"
-                android:layout_height="wrap_content"
-                android:text="Pick up from" />
-        </HorizontalScrollView>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:layout_marginHorizontal="0dp"
-            android:layout_marginVertical="10dp"
-            android:background="@android:color/darker_gray"></LinearLayout>
-        <HorizontalScrollView
-            android:layout_width="match_parent"
-            android:scrollbars="none"
-            android:layout_height="wrap_content">
-
-            <TextView
-                android:id="@+id/tvDestLocation"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:maxLines="1"
-                android:text="Destination Location" />
-        </HorizontalScrollView>
-    </LinearLayout>
-    <fragment
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/map"
-        android:name="com.google.android.gms.maps.SupportMapFragment"/>
-
-    <LinearLayout
-        android:id="@+id/infoPanel"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:visibility="visible"
-        android:layout_marginHorizontal="15dp"
-        android:orientation="vertical">
+        app:cardElevation="4dp"
+        app:cardCornerRadius="4dp"
+        app:cardUseCompatPadding="true"
+        android:theme="@style/AppTheme">
 
         <LinearLayout
+            android:layout_margin="4dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="10dp"
-            android:background="@android:color/white"
-            android:gravity="center"
-            android:paddingVertical="10dp"
-            android:layout_marginBottom="-8dp"
-            android:orientation="horizontal">
+            android:orientation="vertical">
 
-            <LinearLayout
+            <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:orientation="vertical">
+                android:textSize="14sp"
+                android:textColor="#000000"
+                android:text="Lokasi 1"/>
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Price"
-                    android:textSize="12sp" />
-
-                <TextView
-                    android:id="@+id/tvPrice"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Rp13.000" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="1dp"
-                android:layout_height="match_parent"
-                android:layout_marginTop="5dp"
-                android:background="@android:color/darker_gray"></LinearLayout>
-
-            <LinearLayout
+            <fragment
+                android:id="@+id/autocomplete_support_fragment"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:orientation="vertical">
+                android:name="com.google.android.libraries.places.widget.AutocompleteSupportFragment"
+                />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Distance"
-                    android:textSize="12sp" />
+            <TextView
+                android:textColor="#000000"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="Lokasi 2"/>
 
-                <TextView
-                    android:id="@+id/tvDistance"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="0.6 Km" />
+            <fragment
+                android:id="@+id/lokasi2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:name="com.google.android.libraries.places.widget.AutocompleteSupportFragment"
+                />
 
-            </LinearLayout>
+            <TextView
+                android:id="@+id/tv_jarak"
+                android:textColor="#000000"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="Jarak : "/>
+
         </LinearLayout>
 
-        <Button
-            android:id="@+id/btnNext"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:elevation="1dp"
-            android:paddingVertical="20dp"
-            android:text="Next" />
-    </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+    <fragment
+        android:id="@+id/mapNearBy"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <TextView
+        android:id="@+id/custom_fields_list"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
 
 </RelativeLayout>

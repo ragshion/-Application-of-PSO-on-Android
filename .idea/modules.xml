@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/-Application-of-PSO-on-Android.iml" filepath="$PROJECT_DIR$/-Application-of-PSO-on-Android.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/google-apis-app-like-gojek-master.iml" filepath="$PROJECT_DIR$/google-apis-app-like-gojek-master.iml" />
     </modules>
   </component>
 </project>
